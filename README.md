@@ -1,20 +1,21 @@
 # Nilay Marathe portfolio
 
-A static portfolio site built from Nilay's résumé. Project visuals are designed placeholders that can be replaced with project images later.
+Static portfolio files for GitHub Pages. The site uses black, white, grayscale, and a restrained brass accent. All type uses DM Sans.
 
-## Publish with GitHub Pages
+## Upload
 
-1. Create a public GitHub repository, for example `nilay-marathe-portfolio`.
-2. Upload the files in this folder to the root of the `main` branch. Keep `index.html`, `styles.css`, `.nojekyll`, and `NilayMarathe_Resume.pdf` together at the root.
-3. Open the repository's **Settings → Pages**. Under **Build and deployment**, choose **Deploy from a branch**, then select `main` and `/ (root)`. Save.
-4. GitHub will show the live Pages URL in that settings screen after publication. It usually follows `https://<username>.github.io/<repository>/`.
+Upload the files in this directory to the root of a GitHub repository. In **Settings → Pages**, select **Deploy from a branch**, then choose `main` and `/ (root)`.
 
-The résumé PDF is intentionally included for public download, as requested. Its contents include contact details.
+`index.html` is the home page. Each project has a separate HTML page. `styles.css` controls the shared design. `NilayMarathe_Resume.pdf` is the public résumé download, and `.nojekyll` keeps GitHub Pages from applying Jekyll processing.
 
-## Edit the site
+## Project pages
 
-- `index.html` contains the biography, project copy, links, and contact address.
-- `styles.css` controls colors, typography, layout, and project illustration placeholders.
-- Replace the CSS placeholder art or insert project images when you have them. Add descriptive alt text for each image.
+- `multi-robot-construction.html`
+- `battery-disassembly.html`
+- `citysimrl.html`
+- `autodock.html`
+- `manipulator-path-planning.html`
+- `cnc-collision-avoidance.html`
+- `philosophy-rag-chatbot.html`
 
-The site uses relative links, so it works from a GitHub Pages project URL without a build step.
+Each page has a clearly labeled image placeholder and a “Case study details” placeholder for your future images, figures, and narrative. Edit the HTML directly to replace those sections.

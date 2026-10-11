@@ -3,84 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f2f0e9">
+  <meta name="theme-color" content="#111111">
   <meta name="description" content="Nilay Marathe is a mechanical engineering researcher working across robotics, planning, autonomy, and intelligent systems.">
   <title>Nilay Marathe — Robotics & Autonomous Systems</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="brand" href="#top" aria-label="Nilay Marathe, back to top"><span class="brand-mark">NM<span class="brand-dot">.</span></span><span class="brand-name">NILAY MARATHE</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header dark-header" id="top">
+    <a class="brand" href="index.html" aria-label="Nilay Marathe, home">Nilay Marathe<span class="accent">.</span></a>
+    <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
     <a class="header-link" href="NilayMarathe_Resume.pdf" target="_blank" rel="noopener">Résumé <span aria-hidden="true">↗</span></a>
   </header>
-
   <main id="main">
-    <section class="hero section-shell" id="top" aria-labelledby="hero-title">
-      <div class="hero-topline"><span><span class="status-dot"></span> ENGINEER / RESEARCHER</span><span class="hero-index">PORTFOLIO / 2026</span></div>
-      <h1 id="hero-title">BUILDING<br><span class="outlined">WHAT MOVES</span><br>US FORWARD<span class="period">.</span></h1>
-      <div class="hero-bottom">
-        <p>I’m Nilay, a mechanical engineer and researcher working where <strong>robotics, autonomy, and intelligent systems</strong> meet.</p>
-        <a class="round-arrow" href="#work" aria-label="Explore selected work"><span aria-hidden="true">↓</span></a>
+    <section class="hero dark-section">
+      <div class="shell hero-inner">
+        <div class="hero-kicker"><span class="eyebrow">MECHANICAL ENGINEER / RESEARCHER</span><span class="eyebrow">PITTSBURGH, PA</span></div>
+        <div class="hero-content"><div><h1>Engineering<br>systems in <span class="accent">motion.</span></h1></div><div class="hero-side"><p>I’m Nilay. I explore how intelligent machines can plan, coordinate, and make a meaningful difference in the world around us.</p><a class="under-link light-link" href="#work">Explore my work <span aria-hidden="true">↘</span></a></div></div>
+        <div class="hero-bottom"><span>ROBOTICS · AUTONOMY · DESIGN</span><span>SCROLL TO EXPLORE ↓</span></div>
       </div>
-      <div class="hero-rule"><span>SCROLL TO EXPLORE</span><span aria-hidden="true">01 — 04</span></div>
     </section>
-
-    <section class="work section-shell" id="work" aria-labelledby="work-title">
-      <div class="section-heading"><span class="eyebrow">01 / SELECTED WORK</span><h2 id="work-title">Ideas into<br><em>motion.</em></h2><p>Research and engineering projects spanning multi robot coordination, planning, simulation, and autonomy.</p></div>
-
-      <article class="project project-featured" id="construction">
-        <div class="project-visual visual-construction" role="img" aria-label="Placeholder for multi-robot construction project image">
-          <div class="visual-top"><span>01 / 04</span><span>IMAGE PLACEHOLDER</span></div>
-          <div class="construction-art" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          <div class="visual-bottom"><span>COLLECTIVE SYSTEMS</span><span>↗</span></div>
-        </div>
-        <div class="project-info"><div class="project-meta"><span>RESEARCH / CMU ARCS LAB</span><span>2026 — PRESENT</span></div><h3>Teaching robots<br>to build together.</h3><p>Developing an imitation learning pipeline for collective construction. Expert demonstration data from a hierarchical multi agent planner supports the evaluation of learning based approaches to collaborative robot planning.</p><div class="tag-list"><span>Multi robot planning</span><span>Imitation learning</span><span>Simulation</span></div></div>
-      </article>
-
-      <article class="project project-reverse" id="disassembly">
-        <div class="project-visual visual-disassembly" role="img" aria-label="Placeholder for multi-robot disassembly project image">
-          <div class="visual-top"><span>02 / 04</span><span>IMAGE PLACEHOLDER</span></div>
-          <div class="battery-art" aria-hidden="true"><div class="battery-grid"></div><div class="battery-arm arm-one"></div><div class="battery-arm arm-two"></div></div>
-          <div class="visual-bottom"><span>OPTIMIZATION / MANUFACTURING</span><span>↗</span></div>
-        </div>
-        <div class="project-info"><div class="project-meta"><span>RESEARCH / IIT MADRAS DIRO LAB</span><span>2025</span></div><h3>Rethinking the<br>disassembly line.</h3><p>Optimized the removal sequence for more than 100 screws in an electric vehicle battery prototype. Simulations of four, five, and six robot workstations helped identify constraints that reduced disassembly cycle time by 15–20%.</p><div class="tag-list"><span>Genetic algorithms</span><span>RoboDK</span><span>Manufacturing</span></div></div>
-      </article>
-
-      <article class="project" id="citysim">
-        <div class="project-visual visual-city" role="img" aria-label="Placeholder for CitySimRL autonomous driving project image">
-          <div class="visual-top"><span>03 / 04</span><span>IMAGE PLACEHOLDER</span></div>
-          <div class="road-art" aria-hidden="true"><div class="road road-a"></div><div class="road road-b"></div><div class="road-circle"></div><div class="road-car car-a"></div><div class="road-car car-b"></div></div>
-          <div class="visual-bottom"><span>AUTONOMOUS DRIVING</span><span>↗</span></div>
-        </div>
-        <div class="project-info"><div class="project-meta"><span>COURSE PROJECT / CMU</span><span>2026</span></div><h3>A city built to<br>test decisions.</h3><p>Built CitySimRL, a 2D autonomous driving environment that joins highway, merge, roundabout, and intersection scenarios. Custom lane transitions and traffic dynamics enabled reinforcement learning comparisons under different traffic densities.</p><div class="tag-list"><span>Reinforcement learning</span><span>HighwayEnv</span><span>Simulation</span></div></div>
-      </article>
-
-      <article class="project project-reverse" id="autodock">
-        <div class="project-visual visual-autodock" role="img" aria-label="Placeholder for AutoDock power-assist wheelchair project image">
-          <div class="visual-top"><span>04 / 04</span><span>IMAGE PLACEHOLDER</span></div>
-          <div class="path-art" aria-hidden="true"><div class="path-grid"></div><div class="path-line"></div><div class="path-point point-one"></div><div class="path-point point-two"></div><div class="path-point point-three"></div></div>
-          <div class="visual-bottom"><span>ASSISTIVE TECHNOLOGY</span><span>↗</span></div>
-        </div>
-        <div class="project-info"><div class="project-meta"><span>SUMMER PROJECT / IIT MADRAS</span><span>2024</span></div><h3>Finding the<br>way back.</h3><p>Developed an AutoDock concept for power assist wheelchair wheels. Signal strength estimates and wheelchair pose informed navigation; A* and Dijkstra planning guided the wheel toward a wheelchair on a scanned map.</p><div class="tag-list"><span>Path planning</span><span>MATLAB</span><span>Assistive technology</span></div></div>
-      </article>
-
-      <div class="more-work"><div><span class="eyebrow">ALSO EXPLORED</span><h3>More things<br>in motion.</h3></div><div class="more-list"><div><span>01</span><p>Manipulator path planning with MPPI</p><small>ROS / SIMULINK</small></div><div><span>02</span><p>CNC path planning & collision avoidance</p><small>ROS / MOVEIT!</small></div><div><span>03</span><p>RAG chatbot for Indian philosophy</p><small>LLM / OCR</small></div></div></div>
+    <section class="work-section shell" id="work" aria-labelledby="work-title">
+      <div class="section-head"><div><span class="eyebrow">01 / SELECTED WORK</span><h2 id="work-title">Projects & research<span class="accent">.</span></h2></div><p>From multi robot systems to autonomous navigation, I work across software, simulation, and physical engineering.</p></div>
+      <div class="project-grid">
+        <article class="project-card"><a href="multi-robot-construction.html" aria-label="View multi-robot construction planning project"><div class="project-art art-construction"><span class="art-number">01</span><div class="art-geometry" aria-hidden="true"><i></i><i></i><i></i><i></i></div><span class="art-caption">PROJECT IMAGE COMING SOON</span></div><div class="card-meta"><span>CMU / ARCS LAB</span><span>2026 — PRESENT</span></div><h3>Multi-robot construction planning <span aria-hidden="true">↗</span></h3><p>An imitation learning pipeline for collaborative construction tasks in a simulated multi agent environment.</p><div class="card-tags"><span>Robot learning</span><span>Planning</span></div></a></article>
+        <article class="project-card"><a href="battery-disassembly.html" aria-label="View multi-robot battery disassembly project"><div class="project-art art-disassembly"><span class="art-number">02</span><div class="art-geometry" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="art-caption">PROJECT IMAGE COMING SOON</span></div><div class="card-meta"><span>IIT MADRAS / DIRO LAB</span><span>2025</span></div><h3>Multi-robot battery disassembly <span aria-hidden="true">↗</span></h3><p>Optimizing robot workstations and disassembly sequences for an electric vehicle battery prototype.</p><div class="card-tags"><span>Optimization</span><span>RoboDK</span></div></a></article>
+        <article class="project-card"><a href="citysimrl.html" aria-label="View CitySimRL project"><div class="project-art art-city"><span class="art-number">03</span><div class="art-geometry" aria-hidden="true"><i></i><i></i><i></i></div><span class="art-caption">PROJECT IMAGE COMING SOON</span></div><div class="card-meta"><span>CMU / COURSE PROJECT</span><span>2026</span></div><h3>CitySimRL <span aria-hidden="true">↗</span></h3><p>A connected 2D driving environment for testing reinforcement learning under varying traffic conditions.</p><div class="card-tags"><span>Autonomous driving</span><span>Simulation</span></div></a></article>
+        <article class="project-card"><a href="autodock.html" aria-label="View AutoDock project"><div class="project-art art-autodock"><span class="art-number">04</span><div class="art-geometry" aria-hidden="true"><i></i><i></i><i></i></div><span class="art-caption">PROJECT IMAGE COMING SOON</span></div><div class="card-meta"><span>IIT MADRAS / SUMMER PROJECT</span><span>2024</span></div><h3>AutoDock for power-assist wheelchairs <span aria-hidden="true">↗</span></h3><p>Signal-based localization and path planning to guide a power-assist wheel toward a wheelchair.</p><div class="card-tags"><span>Assistive technology</span><span>Path planning</span></div></a></article>
+      </div>
+      <div class="additional-work"><div><span class="eyebrow">MORE PROJECTS</span><h2>Further exploration<span class="accent">.</span></h2></div><div class="project-list"><a href="manipulator-path-planning.html"><span>05</span><strong>Manipulator path planning with MPPI</strong><span>ROS / SIMULINK ↗</span></a><a href="cnc-collision-avoidance.html"><span>06</span><strong>CNC path planning & collision avoidance</strong><span>ROS / MOVEIT! ↗</span></a><a href="philosophy-rag-chatbot.html"><span>07</span><strong>RAG chatbot for Indian philosophy</strong><span>LLM / OCR ↗</span></a></div></div>
     </section>
-
-    <section class="about" id="about" aria-labelledby="about-title"><div class="section-shell about-grid"><div><span class="eyebrow">02 / ABOUT ME</span><h2 id="about-title">A curiosity<br>for complex<br><em>systems.</em></h2></div><div class="about-copy"><p class="about-lead">I work on problems that ask machines to sense, plan, coordinate, and act.</p><p>I’m pursuing an M.S. in Mechanical Engineering (Research) at Carnegie Mellon University, following a B.Tech in Mechanical Engineering from IIT Madras. My projects move between robot learning, simulation, automation, and hands on engineering.</p><div class="about-links"><a href="NilayMarathe_Resume.pdf" target="_blank" rel="noopener">View résumé <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/nilaymarathe" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></div></div></div><div class="about-band" aria-hidden="true">PLAN&nbsp;•&nbsp;BUILD&nbsp;•&nbsp;LEARN&nbsp;•&nbsp;REPEAT&nbsp;•&nbsp;</div></section>
-
-    <section class="contact section-shell" id="contact" aria-labelledby="contact-title"><span class="eyebrow">03 / SAY HELLO</span><h2 id="contact-title">LET’S MAKE<br><span>IT MOVE.</span></h2><div class="contact-bottom"><p>Interested in robotics, autonomy, or a challenging engineering problem? I’d like to hear from you.</p><a class="contact-cta" href="mailto:nmarathe@andrew.cmu.edu">Get in touch <span aria-hidden="true">↗</span></a></div></section>
+    <section class="about-section dark-section" id="about" aria-labelledby="about-title"><div class="shell about-grid"><div><span class="eyebrow">02 / ABOUT ME</span><h2 id="about-title">Curious about<br>complex systems<span class="accent">.</span></h2></div><div><p class="about-lead">I work on problems that ask machines to sense, plan, coordinate, and act.</p><p>I’m pursuing an M.S. in Mechanical Engineering (Research) at Carnegie Mellon University, following a B.Tech in Mechanical Engineering from IIT Madras. My projects move between robot learning, simulation, automation, and hands-on engineering.</p><div class="about-links"><a class="under-link light-link" href="NilayMarathe_Resume.pdf" target="_blank" rel="noopener">View résumé ↗</a><a class="under-link light-link" href="https://www.linkedin.com/in/nilaymarathe" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div></section>
+    <section class="contact-section shell" id="contact" aria-labelledby="contact-title"><span class="eyebrow">03 / CONTACT</span><h2 id="contact-title">Let’s make something <span class="accent">move.</span></h2><div class="contact-row"><p>Interested in robotics, autonomy, or a challenging engineering problem? I’d like to hear from you.</p><a class="under-link" href="mailto:nmarathe@andrew.cmu.edu">Get in touch ↗</a></div></section>
   </main>
-
-  <footer class="footer section-shell"><a href="#top">NM<span class="period">.</span> <span class="back-top">BACK TO TOP ↑</span></a><span>© 2026 NILAY MARATHE</span><a href="https://www.linkedin.com/in/nilaymarathe" target="_blank" rel="noopener">LINKEDIN ↗</a></footer>
+  <footer class="site-footer"><div class="shell"><a class="brand" href="#top">Nilay Marathe<span class="accent">.</span></a><span>© 2026 Nilay Marathe</span><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>
