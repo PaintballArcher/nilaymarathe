@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Research on MPPI trajectory planning for a four-degree-of-freedom robot manipulator.">
+  <title>Manipulator path planning — Nilay Marathe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header dark-header">
+    <a class="brand" href="index.html">Nilay Marathe<span class="accent">.</span></a>
+    <nav aria-label="Main navigation"><a href="index.html#work">Work</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></nav>
+    <a class="header-link" href="NilayMarathe_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+  </header>
+  <main id="main" class="shell">
+    <section class="detail-hero">
+      <div class="breadcrumb"><a href="index.html#work">All projects</a><span aria-hidden="true">/</span><span>04</span></div>
+      <div class="detail-heading">
+        <div><span class="eyebrow">UNDERGRADUATE RESEARCH / MOTION PLANNING</span><h1>Manipulator path planning with MPPI<span class="accent">.</span></h1></div>
+        <p>Testing a sampling-based trajectory optimizer on a four-degree-of-freedom robot arm.</p>
+      </div>
+      <div class="project-art detail-visual has-image">
+        <img src="manipulator-path-planning.png" alt="Simulink Mechanics Explorer model of a four-degree-of-freedom manipulator arm">
+        <span class="art-number">04 / 06</span>
+      </div>
+    </section>
+    <section class="detail-overview">
+      <dl class="fact-list">
+        <div><dt>Institution</dt><dd>IIT Madras</dd></div>
+        <div><dt>Timeline</dt><dd>July – November 2024</dd></div>
+        <div><dt>Robot</dt><dd>PincherX100 · 4-DOF model</dd></div>
+        <div><dt>Tools</dt><dd>SIMULINK · Simscape · Robotics System Toolbox</dd></div>
+      </dl>
+      <div class="overview-copy">
+        <h2>Overview</h2>
+        <p>This undergraduate research project studied whether Model Predictive Path Integral (MPPI) control could generate useful paths for a four-degree-of-freedom manipulator. I built a PincherX100 model in SIMULINK and used its inverse-kinematics solver to establish a nominal trajectory.</p>
+        <p>MPPI then sampled perturbed control inputs, simulated candidate trajectories, and weighted them according to a cost that considered joint velocities, accelerations, joint-state error, and final end-effector position.</p>
+      </div>
+    </section>
+    <section class="detail-section">
+      <span class="eyebrow">01 / METHOD</span>
+      <div>
+        <h2>Sampling possible motions</h2>
+        <ul>
+          <li>Defined the robot's four links and joints and modeled its inverse-kinematics loop in SIMULINK.</li>
+          <li>Applied Gaussian perturbations to nominal control inputs to generate candidate trajectories.</li>
+          <li>Scored trajectories against motion smoothness and the intended final pose before updating the nominal path.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="detail-section">
+      <span class="eyebrow">02 / FINDINGS</span>
+      <div>
+        <h2>A useful limitation to uncover</h2>
+        <p>In this setup, most sampled paths cost more than the nominal path, so the algorithm often retained that trajectory. The weighted controls did not converge reliably to the goal unless the number of time steps increased substantially, which made execution cumbersome.</p>
+        <p>The report identifies end-effector convergence and the chosen cost weights as areas for further tuning and testing. This result clarified the practical difficulty of applying the sampling method to a higher-degree-of-freedom arm.</p>
+      </div>
+    </section>
+    <section class="detail-section">
+      <span class="eyebrow">03 / TO ADD</span>
+      <div><h2>Case study visuals</h2><div class="placeholder-note"><span>+</span><p>Placeholder: add the inverse-kinematics model, sample trajectories, cost comparisons, and an animation of the robot arm.</p></div></div>
+    </section>
+    <a class="next-project" href="cnc-collision-avoidance.html"><div><span>Next project</span><strong>CNC path planning & collision avoidance</strong></div><span aria-hidden="true">↗</span></a>
+  </main>
+  <footer class="site-footer"><div class="shell"><a class="brand" href="index.html">Nilay Marathe<span class="accent">.</span></a><span>© 2026 Nilay Marathe</span><a href="index.html#work">All projects ↑</a></div></footer>
+</body>
+</html>

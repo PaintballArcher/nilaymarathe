@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Genetic-algorithm sequence planning for multi-robot EV battery disassembly.">
+  <title>Multi-robot battery disassembly — Nilay Marathe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header dark-header">
+    <a class="brand" href="index.html">Nilay Marathe<span class="accent">.</span></a>
+    <nav aria-label="Main navigation"><a href="index.html#work">Work</a><a href="index.html#about">About</a><a href="index.html#contact">Contact</a></nav>
+    <a class="header-link" href="NilayMarathe_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+  </header>
+  <main id="main" class="shell">
+    <section class="detail-hero">
+      <div class="breadcrumb"><a href="index.html#work">All projects</a><span aria-hidden="true">/</span><span>03</span></div>
+      <div class="detail-heading">
+        <div><span class="eyebrow">RESEARCH / ROBOTIC AUTOMATION</span><h1>Multi-robot battery disassembly<span class="accent">.</span></h1></div>
+        <p>Planning the order and robot assignment of screw-removal tasks on a simulated electric vehicle battery.</p>
+      </div>
+      <div class="project-art detail-visual has-image">
+        <img src="battery-disassembly.png" alt="RoboDK simulation with robot arms working on an electric vehicle battery model">
+        <span class="art-number">03 / 06</span>
+      </div>
+    </section>
+    <section class="detail-overview">
+      <dl class="fact-list">
+        <div><dt>Institution</dt><dd>IIT Madras</dd></div>
+        <div><dt>Timeline</dt><dd>January – May 2025</dd></div>
+        <div><dt>Tools</dt><dd>Fusion 360 · RoboDK · genetic algorithm</dd></div>
+        <div><dt>Model</dt><dd>112 screws · 4, 5, and 6 robot setups</dd></div>
+      </dl>
+      <div class="overview-copy">
+        <h2>Overview</h2>
+        <p>I modeled a simplified EV battery inspired by a Chevrolet Bolt battery, with 112 screws, eight modules, and eight busbars. The model was built in Fusion 360 and transferred to RoboDK to plan UR10e robot motions for screw removal.</p>
+        <p>The scheduling problem was to assign each screw to a reachable robot and order tasks so that the robots could work in parallel without violating access or collision constraints.</p>
+      </div>
+    </section>
+    <section class="detail-section">
+      <span class="eyebrow">01 / METHOD</span>
+      <div>
+        <h2>Optimizing a constrained sequence</h2>
+        <ul>
+          <li>Created approach and unfastening targets in RoboDK and collected robot–screw travel times.</li>
+          <li>Recorded collision constraints between robot paths and a hard precedence rule: the 60 exterior screws must be removed before the 52 interior screws.</li>
+          <li>Represented each candidate sequence as robot–screw pairs in a genetic algorithm, scoring it with cycle time plus 0.25 times cumulative idle time.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="detail-section">
+      <span class="eyebrow">02 / RESULT</span>
+      <div>
+        <h2>Five robots balanced the workload</h2>
+        <p>The study compared four-, five-, and six-robot workstations. Three robots could not cover the full battery workspace. Among the tested configurations, five robots gave the best balance: four increased individual workloads and cycle time, while six crowded the workspace and sharply increased idle time.</p>
+        <p>The result applies to this simplified battery model and simulated screw-removal task. It does not represent an automated end-to-end battery disassembly line.</p>
+      </div>
+    </section>
+    <section class="detail-section">
+      <span class="eyebrow">03 / TO ADD</span>
+      <div><h2>Case study visuals</h2><div class="placeholder-note"><span>+</span><p>Placeholder: add the robot-layout comparisons, sequence Gantt charts, and cycle-time and idle-time plots from the report.</p></div></div>
+    </section>
+    <a class="next-project" href="manipulator-path-planning.html"><div><span>Next project</span><strong>Manipulator path planning with MPPI</strong></div><span aria-hidden="true">↗</span></a>
+  </main>
+  <footer class="site-footer"><div class="shell"><a class="brand" href="index.html">Nilay Marathe<span class="accent">.</span></a><span>© 2026 Nilay Marathe</span><a href="index.html#work">All projects ↑</a></div></footer>
+</body>
+</html>
